@@ -20,6 +20,8 @@ DD_ADDITIONAL_ENDPOINTS='{"http://pdot:8226": ["fakeApiKey"]}'
 * Change `pdot` for whatever hostname you have assigned to the PDOT container
 * If you don't want to use port 8226, you can change this by setting `OTEL_DATADOG_RECEIVER_PORT` on the PDOT container.
 
+#### Tagging
+
 **Important**: Set the OTEL_RESOURCE_ATTRIBUTES env variable on your PDOT container to match the tags configured on your Datadog Agent. These tags are otherwise lost when forwarding from the Datadog Agent to Phoebe.
 
 Note that Datadog Agent uses the format `tag:value tag:value`, whereas PDOT uses the format `tag=value,tag=value`.
