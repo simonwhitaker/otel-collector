@@ -22,7 +22,7 @@ DD_ADDITIONAL_ENDPOINTS='{"http://pdot:8226": ["fakeApiKey"]}'
 
 #### Tagging
 
-**Important**: Set the OTEL_RESOURCE_ATTRIBUTES env variable on your PDOT container to match the tags configured on your Datadog Agent. These tags are otherwise lost when forwarding from the Datadog Agent to Phoebe.
+**Important**: set the OTEL_RESOURCE_ATTRIBUTES env variable on your PDOT container to match the tags configured on your Datadog Agent. These tags are otherwise lost when forwarding from the Datadog Agent to Phoebe.
 
 Note that Datadog Agent uses the format `tag:value tag:value`, whereas PDOT uses the format `tag=value,tag=value`.
 
