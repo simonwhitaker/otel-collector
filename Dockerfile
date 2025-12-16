@@ -37,7 +37,7 @@ COPY --from=builder /app/dist/otelcol /otel/otelcol
 COPY default-otel-config.yaml /otel/config.yaml
 
 # Expose necessary ports
-EXPOSE 4317 4318 8126
+EXPOSE 4317 4318 8126 13313
 
 RUN chmod +x /otel/otelcol
 
